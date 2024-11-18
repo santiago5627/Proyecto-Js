@@ -1,38 +1,439 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centrado-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; /* Para distribuir los cuadros a los lados */
+  align-items: flex-start; /* Para alinear los cuadros al inicio (parte superior) */
+  width: 100%; /* El contenedor ocupa todo el ancho de la página */
+}
+
+
+.cuadro_corto{
+  position: absolute;
+  right: 70px;
+  width: 150px;
+  height: 70px;
+  background-color:#0B7FCE;
+}
+
+.cuadro_largo  {
+  width: 1490px;
+  height: 70px;
+  background-color: #0B7FCE;
+}
+
+
+.Texto_Central1{
+  text-align:right;
+  padding-right: 550px;
+  transform: translateY(60%);
+  color: #0B7FCE;
+  font-size: 40px;
+  font-family: Arial;
+}
+
+
+.Texto_Central2 {
+  text-align:right;
+  padding-right: 210px;
+  color:black;
+  font-size: 20px;
+  transform: translateY(60%);
+
+  
+}
+
+.boton_Ingresar{
+  position: relative;
+  left: -390px;
+  bottom: -180px;
+  width: 250px;
   color: white;
+  background: #0B7FCE;
+  border-radius: 800px;
+  border: 2000px;
+  font-size: 20px;
+  font-family:Times New Roman;
+  cursor: pointer;
+  height: 55px;
+  border-radius: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.Imagen1{
+  position: absolute;
+  bottom: 270px; 
+  left: 280px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Imagen2 {
+  position: absolute;
+  bottom: 20px;  
+  right: 20px;   
+  width: 100px;  
+}
+
+.Cuadro_Imput{
+  position: relative;
+  left: 290px;
+  transform: translatey(-100%);
+  input {
+    height: 35px;
+    width: 350px; /* Ajusta la altura del campo */
+}
+}
+
+.Cuadro_Imput2{
+  position: relative;
+  left: -68px;
+  transform: translatey(100%);
+  input {
+    height: 35px;
+    width: 350px; /* Ajusta la altura del campo */
+}
+}
+
+.linea{
+  width: 5px;
+  transform: translateY(-20%);
+  height: 10%;
+  background-color: #0B7FCE;
+  margin:auto;
+  height:70vh;
+  
+}
+
+.linea2{
+    height: 5px; /* Altura de la línea */
+    background-color: #0078d7; /* Color de la línea */
+    width: 600px;
+    margin-top: -730px;
+    transform: translateX(181%);
+}
+
+.Relleno {
+  position: absolute;
+  left: 1092px;              
+  top: 60%;                  
+  transform: translateY(-100%);  
+  width: 580px;              
+  height: 200px;             
+  background-color: #0078d7;  
+  color: white;              
+  display: flex;            
+  justify-content: center;  
+  align-items: center;      
+  font-size: 16px;      
+  border: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);    
+}
+
+/*------------------------------------------------------------------------------------------------SEGUNDO PAGINA-------------------------------------------------------------------------------------------------------*/
+
+.centrado-container {
+  display: flex;
+  justify-content: space-between; /* Para distribuir los cuadros a los lados */
+  align-items: flex-start; /* Para alinear los cuadros al inicio (parte superior) */
+  width: 100%; /* El contenedor ocupa todo el ancho de la página */
+  height: 300%;
+}
+
+
+.cuadro_corto2{
+  position: absolute;
+  right: 70px;
+  width: 150px;
+  height: 70px;
+  background-color:#0B7FCE;
+  transform: translateY(880px);
+}
+
+.cuadro_largo2{
+  width: 1490px;
+  height: 70px;
+  background-color: #0B7FCE;
+  transform: translateY(880px);
+
+}
+
+.cuadro_menu{
+
+  position: absolute;
+  left: 26px;              
+  top:60%;                  
+  transform: translateY(90%);  
+  width: 480px;              
+  height: 800px;             
+  background-color: #0078d7;  
+  color: white;              
+  border: 100%;
+  border-radius: 10px; 
+}
+
+.cuadro_margen{
+
+  position: absolute;
+  right: 26px;              
+  top:60%;                  
+  transform: translateY(89%);  
+  width: 1280px;              
+  height: 800px;             
+  background-color: #ffffff;  
+  border: 2px solid #0078d7 ;                                   
+  border: 100%;
+  border-radius: 10px; 
+}
+
+
+.Logo1 {
+    position: absolute;
+    bottom: -450px; 
+    left: 70px;           
+}
+
+.inicio {
+  position: absolute;
+  bottom: -440px; 
+  left: 180px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Logo2 {
+  position: absolute;
+  bottom: -550px; 
+  left: 70px;           
+}
+
+.reporte {
+position: absolute;
+bottom: -540px; 
+left: 180px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+.Logo3 {
+  position: absolute;
+  bottom: -650px; 
+  left: 70px;           
+}
+
+.cuadrante {
+position: absolute;
+bottom: -640px; 
+left: 180px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+.Logo4 {
+  position: absolute;
+  bottom: -750px; 
+  left: 70px;           
+}
+
+.patrullas {
+position: absolute;
+bottom: -740px; 
+left: 180px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+
+.Imagen4 {
+  position: absolute;
+  bottom: 350px;  
+  left: 950px;   
+  width: 30%;
+  height: 55%;
+  transform: translateY(255%);  
+  opacity: 50%;
+}
+
+.Imagen5{
+  position: absolute;
+  bottom: 30px;  
+  right: 40px;   
+  width: 150px;
+  transform: translateY(800%);
+}
+
+/*----------------------------------------------------------------------------------TERCERA PAGINA-------------------------------------------------------------------------------------------------------*/
+
+.centrado-container {
+  display: flex;
+  justify-content: space-between; /* Para distribuir los cuadros a los lados */
+  align-items: flex-start; /* Para alinear los cuadros al inicio (parte superior) */
+  width: 100%; /* El contenedor ocupa todo el ancho de la página */
+  height: 300%;
+}
+
+
+.cuadro_corto3{
+  position: absolute;
+  right: 70px;
+  width: 150px;
+  height: 70px;
+  background-color:#0B7FCE;
+  transform: translateY(1900px);
+}
+
+.cuadro_largo3{
+  width: 1490px;
+  height: 70px;
+  background-color: #0B7FCE;
+  transform: translateY(1900px);
+
+}
+
+.cuadro_menu2{
+
+  position: absolute;
+  left: 26px;              
+  top:60%;                  
+  transform: translateY(231%);  
+  width: 480px;              
+  height: 800px;             
+  background-color: #0078d7;  
+  color: white;              
+  border: 100%;
+  border-radius: 10px; 
+}
+
+.cuadro_margen2{
+
+  position: absolute;
+  right: 26px;              
+  top:60%;                  
+  transform: translateY(230%);  
+  width: 1280px;              
+  height: 800px;             
+  background-color: #ffffff;  
+  border: 2px solid #0078d7 ;                                   
+  border: 100%;
+  border-radius: 10px; 
+}
+
+
+.Logo5 {
+    position: absolute;
+    bottom: -1590px; 
+    left: 77px;           
+}
+
+.inicio2 {
+  position: absolute;
+  bottom: -1580px; 
+  left: 180px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Logo6 {
+  position: absolute;
+  bottom: -1720px; 
+  left: 77px;           
+}
+
+.reporte2 {
+position: absolute;
+bottom: -1715px; 
+left: 170px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+.Logo7 {
+  position: absolute;
+  bottom: -1830px; 
+  left: 75px;           
+}
+
+.cuadrante2 {
+position: absolute;
+bottom: -1825px; 
+left: 172px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+.Logo8 {
+  position: absolute;
+  bottom: -1950px; 
+  left: 75px;           
+}
+
+.patrullas2 {
+position: absolute;
+bottom: -1940px; 
+left: 180px;
+color: #ffffff;
+font-size: 20px;
+cursor: pointer;
+}
+
+
+.Imagen6 {
+  position: absolute;
+  bottom: 350px;  
+  left: 355px;   
+  width: 30%;
+  height: 55%;
+  transform: translateY(45%);  
+  opacity: 50%;
+}
+
+.Imagen7{
+  position: absolute;
+  bottom: 0px;  
+  left: 1100px;   
+  width: 120px;
+  transform: translateY(-49%);
+  opacity: 50%;
+}
+
+.Tabla {
+  display: flex;
+  justify-content: center; /* Centra la tabla horizontalmente */
+  margin: 150px auto;
+  padding: -60px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para la tabla */
+table {
+  width: 91%;
+  border-collapse: collapse; /* Elimina los espacios entre bordes */
+  text-align: center;
+  transform: translateY(-100%);
+}
+
+/* Bordes y diseño para los encabezados */
+th {
+  border: 1px solid black; /* Líneas que separan las columnas */
+  background-color: #606060; /* Fondo azul */
+  color: white; /* Texto blanco */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px; /* Espaciado dentro de cada celda */
+}
+
+.Borde_Margen{
+position: absolute;
+right: 0px;              
+top:60%;                  
+transform: translateY(-30px);  
+width: 1162px;              
+height: 600px;             
+border: 2px solid #0078d7 ;                                   
+border: 10%;
 }
